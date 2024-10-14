@@ -13,12 +13,16 @@
             margin: 0;
             padding: 0;
             scroll-behavior: smooth; /* Smooth scrolling */
+            min-height: 100vh; /* Ensure the body takes full height */
+            display: flex;
+            flex-direction: column;
         }
         header {
             background-color: #4CAF50;
             color: white;
             padding: 10px 0;
             text-align: center;
+            flex-shrink: 0; /* Prevent the header from shrinking */
         }
         nav {
             display: flex;
@@ -43,13 +47,14 @@
             background-color: white;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
         }
         footer {
             text-align: center;
             padding: 20px;
             background-color: #4CAF50;
             color: white;
-            margin-top: 20px;
+            margin-top: auto; /* Push footer to the bottom */
         }
 
         /* Responsive Layout */
@@ -105,4 +110,25 @@
 <section id="investor">
     <h3>Investor Sign-Up</h3>
     <p>Investors can sign up to view business ideas by postgraduate students and choose projects to fund:</p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdP-xUqFIEtVGzjUdfmAakTWZPOAdMXhKHLO7b-gOtkK8C8mA/viewform?usp=sf_link" target="_blank"><button
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSenHGKjgm-xBxP18oxg8k2N8oOPm0uZz4C6I6k7Uf3E231VXg/viewform?usp=sf_link" target="_blank"><button>Become an Investor</button></a>
+</section>
+
+<section id="moderator">
+    <h3>Administrator Sign-Up</h3>
+    <p>Moderators can manage pitch events and ensure smooth interactions between entrepreneurs, investors, and banks:</p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScuXfPqZyJ2_qT-P-sys1mxsD8xzzvStG0PfyadJbA5_D8D0g/viewform?usp=sf_link" target="_blank"><button>Sign-Up as Moderator</button></a>
+</section>
+
+<section id="bank">
+    <h3>Bank Sign-Up</h3>
+    <p>Banks can join the platform to support funding and provide financial guidance for business ventures:</p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd-9kqfJm-VL2JDBu8a78HEoUwCYNy_qHLGnZIJe-xEdcf3w/viewform?usp=sf_link" target="_blank"><button>Sign-Up as a Bank</button></a>
+</section>
+
+<footer>
+    <p>&copy; 2024 TWIPLA. All rights reserved.</p>
+    <p><a href="terms.html" style="color: white;">Terms & Conditions</a> | <a href="privacy.html" style="color: white;">Privacy Policy</a></p>
+</footer>
+
+</body>
+</html>
