@@ -12,8 +12,8 @@
             color: #333;
             margin: 0;
             padding: 0;
-            scroll-behavior: smooth; /* Smooth scrolling */
-            min-height: 100vh; /* Ensure the body takes full height */
+            scroll-behavior: smooth;
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
         }
@@ -22,13 +22,13 @@
             color: white;
             padding: 10px 0;
             text-align: center;
-            flex-shrink: 0; /* Prevent the header from shrinking */
+            flex-shrink: 0;
         }
         nav {
             display: flex;
             justify-content: center;
             margin: 20px 0;
-            flex-wrap: wrap; /* Allow wrap on small screens */
+            flex-wrap: wrap;
         }
         nav a {
             margin: 0 15px;
@@ -54,7 +54,34 @@
             padding: 20px;
             background-color: #4CAF50;
             color: white;
-            margin-top: auto; /* Push footer to the bottom */
+            margin-top: auto;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            margin: 5px 0;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+
+        /* Connection Updates Section */
+        .updates {
+            background-color: #e8f5e9;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-left: 5px solid #4CAF50;
+        }
+        .update-item {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .update-item:last-child {
+            border-bottom: none;
         }
 
         /* Responsive Layout */
@@ -68,18 +95,6 @@
             section {
                 padding: 15px;
             }
-        }
-
-        button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            cursor: pointer;
-            margin: 5px 0;
-        }
-        button:hover {
-            background-color: #45a049;
         }
     </style>
 </head>
@@ -103,7 +118,7 @@
 
 <section id="entrepreneur">
     <h3>Entrepreneur Sign-Up</h3>
-    <p>If you're postgraduate entrepreneur looking for funding, submit your business idea through the form below:</p>
+    <p>If you're a postgraduate entrepreneur looking for funding, submit your business idea through the form below:</p>
     <a href="https://docs.google.com/forms/d/e/1FAIpQLScu6bCcWYVFZ5qxh329rH_OAAzZ2_hE6dyTsTWV1QgwNtRE8Q/viewform?usp=sf_link" target="_blank"><button>Submit Your Business Idea</button></a>
 </section>
 
@@ -125,8 +140,24 @@
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSd-9kqfJm-VL2JDBu8a78HEoUwCYNy_qHLGnZIJe-xEdcf3w/viewform?usp=sf_link" target="_blank"><button>Sign-Up as a Bank</button></a>
 </section>
 
+<!-- Connection Updates Section -->
+<section id="updates">
+    <h3>Recent Connections</h3>
+    <div class="updates">
+        <div class="update-item">
+            <strong>Entrepreneur Jane Doe</strong> connected with <strong>Investor ABC Ventures</strong>. They are now in the funding review stage.
+        </div>
+        <div class="update-item">
+            <strong>Bank XYZ</strong> has approved a loan for <strong>John's Startup</strong> after a successful pitch event.
+        </div>
+        <div class="update-item">
+            <strong>Moderator Lucy</strong> successfully facilitated a pitching event between <strong>GreenTech Startup</strong> and <strong>Investor GreenWorld</strong>.
+        </div>
+    </div>
+</section>
+
 <footer>
-    <p>&copy; 2024 TWIPLA. All rights reserved.</p>
+    <p>&copy; 2024 TWIPLA. All rights reserved. | Created by Simeon Nzamubona</p>
     <p><a href="terms.html" style="color: white;">Terms & Conditions</a> | <a href="privacy.html" style="color: white;">Privacy Policy</a></p>
 </footer>
 
