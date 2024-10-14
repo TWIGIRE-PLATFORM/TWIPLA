@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TWIPLA</title>
     <style>
+        /* Base Styles */
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             color: #333;
             margin: 0;
             padding: 0;
+            scroll-behavior: smooth; /* Smooth scrolling */
         }
         header {
             background-color: #4CAF50;
@@ -22,12 +24,18 @@
             display: flex;
             justify-content: center;
             margin: 20px 0;
+            flex-wrap: wrap; /* Allow wrap on small screens */
         }
         nav a {
             margin: 0 15px;
             text-decoration: none;
             color: #4CAF50;
             font-weight: bold;
+            padding: 10px;
+        }
+        nav a:hover {
+            background-color: #45a049;
+            color: white;
         }
         section {
             max-width: 800px;
@@ -43,6 +51,20 @@
             color: white;
             margin-top: 20px;
         }
+
+        /* Responsive Layout */
+        @media only screen and (max-width: 600px) {
+            nav {
+                flex-direction: column;
+            }
+            nav a {
+                margin: 10px 0;
+            }
+            section {
+                padding: 15px;
+            }
+        }
+
         button {
             background-color: #4CAF50;
             color: white;
@@ -83,30 +105,4 @@
 <section id="investor">
     <h3>Investor Sign-Up</h3>
     <p>Investors can sign up to view business ideas by postgraduate students and choose projects to fund:</p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSenHGKjgm-xBxP18oxg8k2N8oOPm0uZz4C6I6k7Uf3E231VXg/viewform?usp=sf_link" target="_blank"><button>Investor Sign-Up</button></a>
-</section>
-
-<section id="Administrator">
-    <h3>Administrator Sign-Up</h3>
-    <p>Moderators oversee the platform's activity, ensuring smooth operations between entrepreneurs, investors, and banks:</p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfFsyp7CmXEVv0SF9uudc45MjB0YinWZ6jtiGif48qKqbjH9Q/viewform?usp=sf_link" target="_blank"><button>Administrator Sign-Up</button></a>
-</section>
-
-<section id="bank">
-    <h3>Bank Sign-Up</h3>
-    <p>Banks can sign up to support businesses by providing loans to investors:</p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeG3ZT5xCcssBDD2oOIMhEsscUSBWLS4i2kYx5If_prA92lQw/viewform?usp=sf_link" target="_blank"><button>Bank Sign-Up</button></a>
-</section>
-
-<section id="submission">
-    <h3>Business Idea Submission</h3>
-    <p>Submit your business idea for evaluation by investors and banks:</p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeYZhtcKG16sbYu3Mpe6IDiKWL11j9RrnZJeyGcJQ25cS5ykQ/viewform?usp=sf_link" target="_blank"><button>Submit Business Idea</button></a>
-</section>
-
-<footer>
-    <p>Business Pitch Platform &copy; 2024 | Created by Simeon Nzamubona </p>
-</footer>
-
-</body>
-</html>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdP-xUqFIEtVGzjUdfmAakTWZPOAdMXhKHLO7b-gOtkK8C8mA/viewform?usp=sf_link" target="_blank"><button
