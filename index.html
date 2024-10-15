@@ -57,25 +57,25 @@
             margin-top: auto; /* Push footer to the bottom */
         }
 
-        /* New Styles for Recent Connections */
-        #recent-connections {
+        /* Motivational Stories */
+        #motivational-stories {
             background-color: #f4f4f4;
             padding: 20px;
             border-radius: 5px;
             margin-top: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        #recent-connections h3 {
+        #motivational-stories h3 {
             color: #4CAF50;
         }
-        .connection-update {
+        .story {
             margin: 10px 0;
             padding: 10px;
             background-color: #fff;
             border-radius: 5px;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
         }
-        .connection-update p {
+        .story p {
             margin: 5px 0;
         }
 
@@ -108,64 +108,57 @@
 <body>
 
 <header>
-    <h1>Welcome to TWIGIRE PLATFORM as the Business Pitch Platform for postgraduate students</h1>
+    <h1>Welcome to TWIPLA - Business Pitch Platform for Postgraduate Students</h1>
 </header>
 
 <nav>
+    <a href="#motivational-stories">Motivational Stories</a>
     <a href="#entrepreneur">Entrepreneur Sign-Up</a>
     <a href="#investor">Investor Sign-Up</a>
     <a href="#moderator">Administrator Sign-Up</a>
     <a href="#bank">Bank Sign-Up</a>
 </nav>
 
+<!-- Motivational Stories Section (First Page) -->
+<section id="motivational-stories">
+    <h3>Recent Motivational Stories</h3>
+    <div class="story">
+        <p><strong>John Doe, Msc Biomedical Engineering - Cohort 2</strong> pitched his idea for a medical device, which was funded by a local bank. He is now scaling up his business with the help of the support TWIPLA provided.</p>
+        <p><em>Last Updated: 2 hours ago</em></p>
+    </div>
+    <div class="story">
+        <p><strong>Jane Smith, Msc Biotechnology - Cohort 1</strong> secured an investment of $10,000 from an investor who saw the potential of her eco-friendly project on TWIPLA. Her business is now growing rapidly.</p>
+        <p><em>Last Updated: 1 day ago</em></p>
+    </div>
+    <!-- Add more stories as needed -->
+</section>
 
+<!-- Entrepreneur Sign-Up -->
 <section id="entrepreneur">
     <h3>Entrepreneur Sign-Up</h3>
-    <p>Welcome to TWIPLA, the platform where postgraduate students transform their innovative ideas into funded ventures. Whether you're embarking on a new entrepreneurial journey or seeking financial support for your studies, TWIPLA connects you with investors and banks. Collaborate with fellow students to create strong, convincing business projects and unlock opportunities to make your vision a reality. Together, we turn ambition into success!</p>
-    <p>If you're a postgraduate entrepreneur looking for funding, submit your business idea through the form below:</p>
+    <p>Welcome to TWIPLA, where postgraduate students can transform their ideas into funded ventures. Submit your business idea through the form below:</p>
     <a href="https://docs.google.com/forms/d/e/1FAIpQLScu6bCcWYVFZ5qxh329rH_OAAzZ2_hE6dyTsTWV1QgwNtRE8Q/viewform?usp=sf_link" target="_blank"><button>Submit Your Business Idea</button></a>
 </section>
 
-
+<!-- Investor Sign-Up -->
 <section id="investor">
     <h3>Investor Sign-Up</h3>
-    <p><strong>Invest in the Future of Innovation:</strong> At TWIPLA, investors have the opportunity to partner with passionate postgraduate students who are driven to make a difference in their fields. These students bring fresh ideas, cutting-edge solutions, and the determination to succeed. By investing in these ventures, you're not only helping turn groundbreaking ideas into reality, but you're also positioning yourself to benefit from the next generation of profitable, high-impact businesses. Join us in shaping the future, while reaping the rewards of your investment in tomorrow’s leaders.</p>
-    <p>Investors can sign up to view business ideas by postgraduate students and choose projects to fund:</p>
+    <p>Invest in the future of innovation by partnering with postgraduate students on TWIPLA. Join us in shaping tomorrow's businesses:</p>
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSenHGKjgm-xBxP18oxg8k2N8oOPm0uZz4C6I6k7Uf3E231VXg/viewform?usp=sf_link" target="_blank"><button>Become an Investor</button></a>
 </section>
 
-
+<!-- Moderator Sign-Up -->
 <section id="moderator">
     <h3>Administrator Sign-Up</h3>
-    <p>Moderators can manage pitch events and ensure smooth interactions between entrepreneurs, investors, and banks:</p>
+    <p>Moderators can manage pitch events and ensure smooth interactions:</p>
     <a href="https://docs.google.com/forms/d/e/1FAIpQLScuXfPqZyJ2_qT-P-sys1mxsD8xzzvStG0PfyadJbA5_D8D0g/viewform?usp=sf_link" target="_blank"><button>Sign-Up as Moderator</button></a>
 </section>
 
-
+<!-- Bank Sign-Up -->
 <section id="bank">
     <h3>Bank Sign-Up</h3>
-    <p>Support the next generation of business leaders. By signing up as a bank on TWIPLA, you enable innovative ventures to receive the funding they need to thrive. Partner with entrepreneurs and investors to provide financial guidance and turn potential into growth.</p>
-    <p>Banks can join the platform to support funding and provide financial guidance for business ventures:</p>
+    <p>Banks can join the platform to support funding and provide financial guidance:</p>
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSd-9kqfJm-VL2JDBu8a78HEoUwCYNy_qHLGnZIJe-xEdcf3w/viewform?usp=sf_link" target="_blank"><button>Sign-Up as a Bank</button></a>
-</section>
-
-
-
-<!-- Recent Connections Section and pending connections -->
-<section id="recent-connections and pending connections">
-    <h3>Recent Connections and pending connections </h3>
-    <div class="connection-update">
-        <p><strong> Msc Biomedical Engineering-Cohort 3 </strong> has pending connection with <strong>Investor Pharmalab Ltd </strong> to pitch their new Medical laboratory consumables Business Idea.</p>
-        <p><em>Last Updated: 10 minutes ago</em></p>
-    </div>
-    <div class="connection-update">
-        <p><strong>Bank of Kigali </strong> has a pending loan support plan to <strong> Msc Biomedical Engineering-Cohort 3 </strong> for scaling his investments.</p>
-        <p><em>Last Updated: 30 minutes ago</em></p>
-    </div>
-    <div class="connection-update">
-        <p><strong>Moderator Simeon Nzamubona </strong> is organizing a first pitch event between <strong> Msc Biomedical Engineering-Cohort 3 </strong> and <strong>Pharmalab Ltd along with Bank of Kigali</strong>.</p>
-        <p><em>Last Updated: 45 minutes ago</em></p>
-    </div>
 </section>
 
 <footer>
