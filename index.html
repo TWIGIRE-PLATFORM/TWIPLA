@@ -163,52 +163,74 @@
 </header>
 
 <section id="welcome-note" style="background-color: #e7f9e7; border-radius: 8px; padding: 20px; position: relative; overflow: hidden;">
-    <h2 style="color: #2E7D32; font-family: 'Arial', sans-serif; text-align: center; font-size: 2em; cursor: pointer;" onclick="toggleSection('welcome')">Welcome to TWIPLA!</h2>
+    <h2 style="
+        color: #2E7D32;
+        font-family: 'Arial', sans-serif;
+        text-align: center;
+        font-size: 2em;
+        cursor: pointer;
+        padding: 10px;
+        background-color: #C8E6C9; /* Light green background */
+        border: 2px solid #2E7D32; /* Dark green border */
+        border-radius: 5px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    "
+    onclick="toggleSection('welcome')"
+    onmouseover="this.style.backgroundColor='#A5D6A7';" /* Darker green on hover */
+    onmouseout="this.style.backgroundColor='#C8E6C9';"   /* Revert to initial color */
+    >Welcome to TWIPLA!</h2>
+    
     <div id="welcome" style="display:none; animation: fadeIn 1s ease;">
         <p style="font-size: 1.2em; line-height: 1.5; text-align: justify; padding: 10px; background-color: #ffffff; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);">
-            At TWIPLA, we believe in the power of collaboration and the transformative potential of brilliant ideas. Whether you are an aspiring entrepreneur with a groundbreaking project, an investor looking for the next big opportunity, or a financial institution ready to support innovation, TWIPLA connects you with the right partners to bring your visions to life.
+            At TWIPLA, we believe in the power of collaboration and the transformative potential of brilliant ideas...
         </p>
         <p style="font-size: 1.2em; line-height: 1.5; text-align: justify; padding: 10px; background-color: #ffffff; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); margin-top: 10px;">
-            Explore the possibilities, connect with like-minded individuals, and take the first step toward making your entrepreneurial dreams a reality by participating in TWIPLA pitching events. Join us, and together, let’s create a brighter future through teamwork and innovation!
+            Explore the possibilities, connect with like-minded individuals, and take the first step toward making your entrepreneurial dreams a reality by participating in TWIPLA pitching events...
         </p>
     </div>
 </section>
 
-<style>
-    /* Animation for fading in content */
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
 
-    /* Button styles */
-    button {
-        background-color: #4CAF50;
-        color: white;
-        padding: 10px 15px;
-        border: none;
-        cursor: pointer;
-        margin: 5px 0;
-        border-radius: 5px;
-        transition: background-color 0.3s, transform 0.3s;
+
+
+<style>
+
+/* Animation for fading in content */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
     }
-    
-    button:hover {
-        background-color: #45a049;
-        transform: scale(1.05);
+    to {
+        opacity: 1;
     }
+}
+
+/* Button styles */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    margin: 5px 0;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+   
 </style>
 
 
 <nav>
-    <a href="#entrepreneur">Entrepreneur Sign-Up</a>
-    <a href="#investor">Investor Sign-Up</a>
-    <a href="#moderator">Administrator Sign-Up</a>
-    <a href="#bank">Bank Sign-Up</a>
+    <a href="#entrepreneur"> Entrepreneur cohort invitation here </a>
+    <a href="#investor">Investor ? most welcome here.</a>
+    <a href="#moderator"> want to be part of moderator team? this is the right place.</a>
+    <a href="#bank"> commercial Banks wing here </a>
 </nav>
 
 <section id="entrepreneur" style="background-color: #e7f9e7; border-radius: 8px; padding: 20px; margin-bottom: 20px; position: relative; overflow: hidden;">
@@ -381,6 +403,7 @@
         faqContent.style.display = faqContent.style.display === 'block' ? 'none' : 'block';
     }
 </script>
+
 
 </body>
 </html>
