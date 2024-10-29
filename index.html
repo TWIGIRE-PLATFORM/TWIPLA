@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to<br>TWIPLA</title> <!-- Modified Title -->
+    <title>Welcome to<br>TWIPLA</title>
     <style>
         /* Base Styles */
         body {
@@ -12,8 +12,8 @@
             color: #333;
             margin: 0;
             padding: 0;
-            scroll-behavior: smooth; /* Smooth scrolling */
-            min-height: 100vh; /* Ensure the body takes full height */
+            scroll-behavior: smooth;
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
         }
@@ -22,13 +22,13 @@
             color: white;
             padding: 10px 0;
             text-align: center;
-            flex-shrink: 0; /* Prevent the header from shrinking */
+            flex-shrink: 0;
         }
         nav {
             display: flex;
             justify-content: center;
             margin: 20px 0;
-            flex-wrap: wrap; /* Allow wrap on small screens */
+            flex-wrap: wrap;
         }
         nav a {
             margin: 0 15px;
@@ -54,7 +54,7 @@
             padding: 20px;
             background-color: #4CAF50;
             color: white;
-            margin-top: auto; /* Push footer to the bottom */
+            margin-top: auto;
         }
 
         /* New Styles for Recent Connections */
@@ -159,14 +159,50 @@
 <body>
 
 <header>
-    <h1>Welcome to <br> TWIGIRE PLATFORM <br> Investment is not the issue but the Innovation </h1> <!-- Added line break in header -->
+    <h1>Welcome to <br> TWIGIRE PLATFORM <br> Investment is not the issue but the Innovation </h1>
 </header>
 
-<section id="welcome-note">
-    <h2>TWIPLA - Your Gateway to Innovation and Investment through pitching events!</h2>
-    <p>At TWIPLA, we believe in the power of collaboration and the transformative potential of brilliant ideas. Whether you are an aspiring entrepreneur with a groundbreaking project, an investor looking for the next big opportunity, or a financial institution ready to support innovation, TWIPLA connects you with the right partners to bring your visions to life. Join a community where ideas turn into impactful ventures through pitching events, and together, we create a brighter future through teamwork and investment.</p>
-    <p>Explore the possibilities, connect with like-minded individuals, and take the first step toward making your entrepreneurial dreams a reality by participating in TWIPLA pitching events. Welcome to the future of innovation!</p>
+<section id="welcome-note" style="background-color: #e7f9e7; border-radius: 8px; padding: 20px; position: relative; overflow: hidden;">
+    <h2 style="color: #2E7D32; font-family: 'Arial', sans-serif; text-align: center; font-size: 2em; cursor: pointer;" onclick="toggleSection('welcome')">Welcome to TWIPLA!</h2>
+    <div id="welcome" style="display:none; animation: fadeIn 1s ease;">
+        <p style="font-size: 1.2em; line-height: 1.5; text-align: justify; padding: 10px; background-color: #ffffff; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);">
+            At TWIPLA, we believe in the power of collaboration and the transformative potential of brilliant ideas. Whether you are an aspiring entrepreneur with a groundbreaking project, an investor looking for the next big opportunity, or a financial institution ready to support innovation, TWIPLA connects you with the right partners to bring your visions to life.
+        </p>
+        <p style="font-size: 1.2em; line-height: 1.5; text-align: justify; padding: 10px; background-color: #ffffff; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); margin-top: 10px;">
+            Explore the possibilities, connect with like-minded individuals, and take the first step toward making your entrepreneurial dreams a reality by participating in TWIPLA pitching events. Join us, and together, let’s create a brighter future through teamwork and innovation!
+        </p>
+    </div>
 </section>
+
+<style>
+    /* Animation for fading in content */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    /* Button styles */
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+        margin: 5px 0;
+        border-radius: 5px;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    
+    button:hover {
+        background-color: #45a049;
+        transform: scale(1.05);
+    }
+</style>
+
 
 <nav>
     <a href="#entrepreneur">Entrepreneur Sign-Up</a>
@@ -175,108 +211,171 @@
     <a href="#bank">Bank Sign-Up</a>
 </nav>
 
-<section id="entrepreneur">
-    <h3>Post Graduate Entrepreneur Team Entry</h3>
-    <p>Welcome to TWIPLA, the platform where Specialized entrepreneur teams transform their innovative ideas into funded ventures by participating in TWIPLA pitching events. Whether you're embarking on a new entrepreneurial journey or seeking financial support for your studies, TWIPLA connects you with investors and banks. Collaborate with fellow students to create strong, convincing business projects and unlock opportunities to make your vision a reality. Together, we turn ambition into success!</p>
-    <p>If you're a postgraduate entrepreneur student team or cohort looking for funding, submit your business idea through the form below and be prepared for TWIPLA pitching events:</p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLScu6bCcWYVFZ5qxh329rH_OAAzZ2_hE6dyTsTWV1QgwNtRE8Q/viewform?usp=sf_link" target="_blank"><button>Submit Your Business Idea</button></a>
+<section id="entrepreneur" style="background-color: #e7f9e7; border-radius: 8px; padding: 20px; margin-bottom: 20px; position: relative; overflow: hidden;">
+    <h3 style="color: #2E7D32; font-family: 'Arial', sans-serif; text-align: center; font-size: 1.8em; cursor: pointer;" onclick="toggleSection('entrepreneur-content')">Post Graduate Entrepreneur Team Entry</h3>
+    <div id="entrepreneur-content" style="display:none; animation: fadeIn 1s ease;">
+        <p style="font-size: 1.2em; line-height: 1.5; text-align: justify; padding: 10px; background-color: #ffffff; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);">
+            Welcome to TWIPLA, the platform where specialized entrepreneur teams transform their innovative ideas into funded ventures by participating in TWIPLA pitching events. Collaborate with fellow students to create strong, convincing business projects and unlock opportunities to make your vision a reality. Together, we turn ambition into success!
+        </p>
+        <p style="font-size: 1.2em; line-height: 1.5; text-align: justify; padding: 10px; background-color: #ffffff; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); margin-top: 10px;">
+            If you're a postgraduate entrepreneur student team or cohort looking for funding, submit your business idea through the form below and be prepared for TWIPLA pitching events:
+        </p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScu6bCcWYVFZ5qxh329rH_OAAzZ2_hE6dyTsTWV1QgwNtRE8Q/viewform?usp=sf_link" target="_blank"><button>Submit Your Business Idea</button></a>
+    </div>
 </section>
 
-<section id="investor">
-    <h3>Investor Entry</h3>
-    <p><strong>Invest in the Future of Innovation:</strong> At TWIPLA, investors have the opportunity to partner with passionate postgraduate students who are driven to make a difference in their fields. Post Graduates students bring fresh ideas, cutting-edge solutions, and the determination to succeed by participating in TWIPLA pitching events. By investing in these ventures, you're not only helping turn groundbreaking ideas into reality, but you're also positioning yourself to benefit from the next generation of profitable, high-impact businesses. Join us in shaping the future, while reaping the rewards of your investment in tomorrow’s leaders.</p>
-    <p>Investors can sign up to view business ideas by postgraduate students and choose projects to fund:</p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSenHGKjgm-xBxP18oxg8k2N8oOPm0uZz4C6I6k7Uf3E231VXg/viewform?usp=sf_link" target="_blank"><button>Become an Investor</button></a>
+<section id="investor" style="background-color: #e7f9e7; border-radius: 8px; padding: 20px; margin-bottom: 20px; position: relative; overflow: hidden;">
+    <h3 style="color: #2E7D32; font-family: 'Arial', sans-serif; text-align: center; font-size: 1.8em; cursor: pointer;" onclick="toggleSection('investor-content')">Investor Entry</h3>
+    <div id="investor-content" style="display:none; animation: fadeIn 1s ease;">
+        <p style="font-size: 1.2em; line-height: 1.5; text-align: justify; padding: 10px; background-color: #ffffff; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);">
+            <strong>Invest in the Future of Innovation:</strong> At TWIPLA, investors have the opportunity to partner with passionate postgraduate students who are driven to make a difference in their fields. By investing in these ventures, you're not only helping turn groundbreaking ideas into reality, but you're also positioning yourself to benefit from the next generation of profitable, high-impact businesses. Join us in shaping the future while reaping the rewards of your investment in tomorrow’s leaders.
+        </p>
+        <p style="font-size: 1.2em; line-height: 1.5; text-align: justify; padding: 10px; background-color: #ffffff; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); margin-top: 10px;">
+            Investors can sign up to view business ideas by postgraduate students and choose projects to fund:
+        </p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSenHGKjgm-xBxP18oxg8k2N8oOPm0uZz4C6I6k7Uf3E231VXg/viewform?usp=sf_link" target="_blank"><button>Become an Investor</button></a>
+    </div>
 </section>
 
-<section id="moderator">
-    <h3>Moderator Entry</h3>
-    <p>Moderators can manage pitch events and ensure smooth interactions between entrepreneurs, investors, and banks:</p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfFsyp7CmXEVv0SF9uudc45MjB0YinWZ6jtiGif48qKqbjH9Q/viewform?usp=sf_link" target="_blank"><button>Sign-Up as Moderator</button></a>
+<section id="moderator" style="background-color: #e7f9e7; border-radius: 8px; padding: 20px; margin-bottom: 20px; position: relative; overflow: hidden;">
+    <h3 style="color: #2E7D32; font-family: 'Arial', sans-serif; text-align: center; font-size: 1.8em; cursor: pointer;" onclick="toggleSection('moderator-content')">Moderator Entry</h3>
+    <div id="moderator-content" style="display:none; animation: fadeIn 1s ease;">
+        <p style="font-size: 1.2em; line-height: 1.5; text-align: justify; padding: 10px; background-color: #ffffff; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);">
+            Moderators play a crucial role in managing pitch events and ensuring smooth interactions between entrepreneurs, investors, and banks. Join our team of moderators to facilitate these pivotal moments and contribute to the innovation ecosystem:
+        </p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfFsyp7CmXEVv0SF9uudc45Mj9zBdT7OQZV1YthHkBrIhf3Yg/viewform?usp=sf_link" target="_blank"><button>Become a Moderator</button></a>
+    </div>
 </section>
 
-<section id="bank">
-    <h3>Bank Entry</h3>
-    <p>Support the next generation of business leaders. By signing up as a bank on TWIPLA, you enable innovative ventures to receive the funding they need to thrive. Partner with entrepreneurs and play a crucial role in turning their ideas into reality:</p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf6aPfRfbw8QHDwBQCp5UKRcpOsFbxjN_EEGwQx0OZXyk0-2w/viewform?usp=sf_link" target="_blank"><button>Sign-Up as a Bank</button></a>
+<section id="bank" style="background-color: #e7f9e7; border-radius: 8px; padding: 20px; margin-bottom: 20px; position: relative; overflow: hidden;">
+    <h3 style="color: #2E7D32; font-family: 'Arial', sans-serif; text-align: center; font-size: 1.8em; cursor: pointer;" onclick="toggleSection('bank-content')">Bank Entry</h3>
+    <div id="bank-content" style="display:none; animation: fadeIn 1s ease;">
+        <p style="font-size: 1.2em; line-height: 1.5; text-align: justify; padding: 10px; background-color: #ffffff; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);">
+            As a financial institution, banks can partner with TWIPLA to support innovation and entrepreneurship. Join us to contribute to the growth of future entrepreneurs and be part of the transformative journey:
+        </p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeSvn4nGcp7gSyAe3KHUXod9y_HgH-eQmTB-QmqPToYHz4Dgg/viewform?usp=sf_link" target="_blank"><button>Join as a Bank</button></a>
+    </div>
 </section>
+
 
 <section id="recent-connections">
-    <h3>Recent Connections</h3>
-    <div class="connection-update">
-        <p><strong>Connection 1:</strong> Msc Biomedical Engineering-Cohort 3</strong> has submitted a strong concept Business Ideas notes which attracted attention of <strong>Investors from Pharmalab Ltd, Norrsken House, Jasiri Talent Investor</strong> which will follow pitching using Business Model Canvas format on 10/15/2024.</p>
-    </div>
-    <div class="connection-update">
-        <p><strong>Connection 2:</strong> Entrepreneur Team B connected with Bank Y on 10/20/2024.</p>
-    </div>
-    <div class="connection-update">
-        <p><strong>Connection 3:</strong> Best business analyst and Moderator Team</strong> is organizing a first pitch event to be hosted by Norrsken House, Post graduate entrepreneurs who submitted projects will be communicated soon , 10/25/2024.</p>
+    <h3 onclick="toggleSection('recent-connections-content')">Recent Connections</h3>
+    <div id="recent-connections-content" style="display:none;">
+        <div class="connection-update">
+            <h4 onclick="toggleConnection('connection1')">Connection 1: Msc Biomedical Engineering-Cohort 3</h4>
+            <div id="connection1" class="connection-content" style="display:none;">
+                <p>has submitted a strong concept Business Ideas notes which attracted attention of <strong>Investors from Pharmalab Ltd, Norrsken House, Jasiri Talent Investor</strong> which will follow pitching using Business Model Canvas format on 10/15/2024.</p>
+            </div>
+        </div>
+        <div class="connection-update">
+            <h4 onclick="toggleConnection('connection2')">Connection 2: by Msc Renewable Energy cohort 6 </h4>
+            <div id="connection2" class="connection-content" style="display:none;">
+                <p>was invited in africa energy expo 10/29/2024.</p>
+            </div>
+        </div>
+        <div class="connection-update">
+            <h4 onclick="toggleConnection('connection3')">Connection 3: Best business analyst and Moderator Team</h4>
+            <div id="connection3" class="connection-content" style="display:none;">
+                <p>is organizing a first pitch event to be hosted by Norrsken House. Post graduate entrepreneurs who submitted projects will be communicated soon, 10/25/2024.</p>
+            </div>
+        </div>
     </div>
 </section>
 
 <section id="submitted-projects">
-    <h3>Submitted Projects</h3>
-    <div class="project-update">
-        <h4>Project Title 1</h4>
-        <p>Description of Project 1 submitted by <p><strong>Submitted By:</strong> Msc Biomedical Engineering Cohort 3 Entrepreneur team from UR-CEBE (https://cebe.ur.ac.rw/)  </p>.</p>
+    <h3 onclick="toggleSection('submitted-projects-content')">Submitted Projects</h3>
+    <div id="submitted-projects-content" style="display:none;">
+        <div class="project-update">
+            <h4 onclick="toggleProject('project1')">Project 1: Affordable manufacturing medical gloves using synthetic latex </h4>
+            <div id="project1" class="project-content" style="display:none;">
+                <p><p>Project 1 submitted by <p><strong>Submitted By:</strong> Msc Biomedical Engineering Cohort 3 Entrepreneur team from UR-CEBE (https://cebe.ur.ac.rw/).</p>
+            </div>
+        </div>
+        <div class="project-update">
+            <h4 onclick="toggleProject('project2')">Project 2: Self powered pumps</h4>
+            <div id="project2" class="project-content" style="display:none;">
+                <p> Project 2 submitted by Msc Renewable Energy cohort 6 Entrepreneur team from UR-CST/ACE-ESD (https://aceesd.ur.ac.rw/home).</p>
+            </div>
+        </div>
+        <div class="project-update">
+            <h4 onclick="toggleProject('project3')">Project 3: Dual charger of cell phone and laptops with power bank accessory from E wastes </h4>
+            <div id="project3" class="project-content" style="display:none;">
+                <p>Project 3 submitted by Executive Global MBA with universitta cattolica de sacro del cuore </p>
+            </div>
+        </div>
     </div>
-    <div class="project-update">
-        <h4>Project Title 2</h4>
-        <p>Msc Renewable Energy cohort 6 Entrepreneur team from UR-CST/ACE-ESD (https://aceesd.ur.ac.rw/home).</p>
-    </div>
-    
 </section>
 
 <section id="faq">
-    <h3>Frequently Asked Questions</h3>
-    <div class="faq">
-        <h4 onclick="toggleFAQ('faq1')">What is TWIPLA?</h4>
-        <div id="faq1" class="faq-content">
-            <p>TWIPLA is a platform that connects entrepreneurs with investors and banks to facilitate the funding of innovative projects through pitching events.</p>
+    <h3 onclick="toggleSection('faq-content')">FAQs</h3>
+    <div id="faq-content" style="display:none;">
+        <div class="faq">
+            <h4 onclick="toggleFAQ('faq1')">What is TWIPLA?</h4>
+            <div id="faq1" class="faq-content">
+                <p>TWIPLA is a platform that connects postgraduate students with investors and banks to facilitate innovative projects through pitching events.</p>
+            </div>
         </div>
-    </div>
-    <div class="faq">
-        <h4 onclick="toggleFAQ('faq2')">Who can participate in TWIPLA pitching events?</h4>
-        <div id="faq2" class="faq-content">
-            <p>Both postgraduate students with business ideas and investors looking for opportunities can participate. Additionally, banks and moderators are welcome to join the platform.</p>
+        <div class="faq">
+            <h4 onclick="toggleFAQ('faq2')">How can I participate in pitching events?</h4>
+            <div id="faq2" class="faq-content">
+                <p>To participate, submit your business idea through the relevant form for entrepreneurs, and prepare for the upcoming pitch events.</p>
+            </div>
         </div>
-    </div>
-    <div class="faq">
-        <h4 onclick="toggleFAQ('faq3')">How do I submit a project idea?</h4>
-        <div id="faq3" class="faq-content">
-            <p>You can submit your project idea by filling out the designated form available on the respective sections for entrepreneurs.</p>
+        <div class="faq">
+            <h4 onclick="toggleFAQ('faq3')">What types of projects are accepted?</h4>
+            <div id="faq3" class="faq-content">
+                <p>TWIPLA accepts innovative projects from various fields, including technology, healthcare, sustainability, and more.</p>
+            </div>
         </div>
-    </div>
-    <div class="faq">
-        <h4 onclick="toggleFAQ('faq4')">What are the benefits of being an investor?</h4>
-        <div id="faq4" class="faq-content">
-            <p>Investors gain access to innovative projects, the chance to support promising entrepreneurs, and the opportunity to profit from successful ventures.</p>
-        </div>
-    </div>
-</section>
-<section id="partners">
-    <h3>Our Partners</h3>
-    <div class="partner">
-        <h4>Business Development fund, https://bdf.rw</h4>
-        <p>your business development partner.</p>
-    </div>
-    <div class="partner">
-        <h4>Norrsken House, https://site.norrsken.org/kigali</h4>
-        <p>Bringing sustainable innovation to life, connecting entrepreneurs with resources to scale and expand.</p>
-    </div>
-    <div class="partner">
-        <h4>Jasiri Talent Investor, https://jasiri.org/jasiri-talent-investor/</h4>
-        <p>Helping drive the success of innovative entrepreneurs by providing long-term, scalable funding.</p>
     </div>
 </section>
 
 <footer>
-    <p>&copy; 2024 TWIPLA. All rights reserved. | Created by sim </p>
-    <p>Contact us: <a href="mailto:youremail@example.com">twiplaevents@gmail.com</a> | Phone: +250 784803560 / +250 786854200</p>
-    <p><a href="terms.html" style="color: white;">Terms & Conditions</a> | <a href="privacy.html" style="color: white;">Privacy Policy</a></p>
+    
+    <div style="background-color: #f9f9f9; padding: 20px; border-top: 1px solid #ccc;">
+        <h4 style="color: #4CAF50; margin: 0;">Our Partners</h4>
+        <ul style="list-style-type: none; padding: 0; margin: 10px 0;">
+            <li style="display: inline; margin: 0 15px;">
+                <a href="https://pharmalabrwanda.rw" target="_blank" style="text-decoration: none; color: #4CAF50;">Pharmalab Ltd</a>
+            </li>
+            <li style="display: inline; margin: 0 15px;">
+                <a href="https://www.norrsken.org/houses/kigali#the-house" target="_blank" style="text-decoration: none; color: #4CAF50;">Norrsken House</a>
+            </li>
+            <li style="display: inline; margin: 0 15px;">
+                <a href="https://jasiri.org/jasiri-talent-investor/" target="_blank" style="text-decoration: none; color: #4CAF50;">Jasiri Talent Investor</a>
+            </li>
+            <li style="display: inline; margin: 0 15px;">
+                <a href="https://bdf.rw" target="_blank" style="text-decoration: none; color: #4CAF50;">Business Development Fund</a>
+            </li>
+        </ul>
+    </div>
+<div style="background-color: #4CAF50; padding: 20px; text-align: center;">
+        <p style="margin: 0; color: white;">&copy; 2024 TWIPLA. All rights reserved. | Created by sim</p>
+        <p style="margin: 5px 0;">Contact us: <a href="mailto:twiplaevents@gmail.com" style="color: white;">twiplaevents@gmail.com</a> | Phone: +250 784803560 / +250 786854200</p>
+        <p style="margin: 5px 0;">
+            <a href="terms.html" style="color: white;">Terms & Conditions</a> | <a href="privacy.html" style="color: white;">Privacy Policy</a>
+        </p>
+    </div>
 </footer>
 
+
+
 <script>
+    function toggleSection(sectionId) {
+        const sectionContent = document.getElementById(sectionId);
+        sectionContent.style.display = sectionContent.style.display === 'block' ? 'none' : 'block';
+    }
+
+    function toggleConnection(connectionId) {
+        const connectionContent = document.getElementById(connectionId);
+        connectionContent.style.display = connectionContent.style.display === 'block' ? 'none' : 'block';
+    }
+
+    function toggleProject(projectId) {
+        const projectContent = document.getElementById(projectId);
+        projectContent.style.display = projectContent.style.display === 'block' ? 'none' : 'block';
+    }
+
     function toggleFAQ(faqId) {
         const faqContent = document.getElementById(faqId);
         faqContent.style.display = faqContent.style.display === 'block' ? 'none' : 'block';
