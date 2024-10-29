@@ -102,6 +102,34 @@
             color: #333;
         }
 
+        /* New FAQ Styles */
+        #faq {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        #faq h3 {
+            color: #4CAF50;
+        }
+        .faq {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+        .faq h4 {
+            cursor: pointer;
+            margin: 0;
+        }
+        .faq-content {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border-top: 1px solid #ccc;
+        }
+
         /* Responsive Layout */
         @media only screen and (max-width: 600px) {
             nav {
@@ -131,7 +159,7 @@
 <body>
 
 <header>
-    <h1>Welcome to <br> TWIGIRE PLATFORM</h1> <!-- Added line break in header -->
+    <h1>Welcome to <br> TWIGIRE PLATFORM <br> Investment is not the issue but the Innovation </h1> <!-- Added line break in header -->
 </header>
 
 <section id="welcome-note">
@@ -161,7 +189,6 @@
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSenHGKjgm-xBxP18oxg8k2N8oOPm0uZz4C6I6k7Uf3E231VXg/viewform?usp=sf_link" target="_blank"><button>Become an Investor</button></a>
 </section>
 
-
 <section id="moderator">
     <h3>Moderator Entry</h3>
     <p>Moderators can manage pitch events and ensure smooth interactions between entrepreneurs, investors, and banks:</p>
@@ -170,59 +197,69 @@
 
 <section id="bank">
     <h3>Bank Entry</h3>
-    <p>Support the next generation of business leaders. By signing up as a bank on TWIPLA, you enable innovative ventures to receive the funding they need to thrive. Partner with entrepreneurs and investors to provide financial guidance and turn potential into growth.</p>
-    <p>Banks can join the platform to support funding and provide financial guidance for business ventures by participating in TWIPLA pitching events:</p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeG3ZT5xCcssBDD2oOIMhEsscUSBWLS4i2kYx5If_prA92lQw/viewform?usp=sf_link" target="_blank"><button>Sign-Up as a Bank</button></a>
+    <p>Support the next generation of business leaders. By signing up as a bank on TWIPLA, you enable innovative ventures to receive the funding they need to thrive. Partner with entrepreneurs and play a crucial role in turning their ideas into reality:</p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf6aPfRfbw8QHDwBQCp5UKRcpOsFbxjN_EEGwQx0OZXyk0-2w/viewform?usp=sf_link" target="_blank"><button>Sign-Up as a Bank</button></a>
 </section>
 
+<section id="recent-connections">
+    <h3>Recent Connections</h3>
+    <div class="connection-update">
+        <p><strong>Connection 1:</strong> Msc Biomedical Engineering-Cohort 3</strong> has submitted a strong concept Business Ideas notes which attracted attention of <strong>Investors from Pharmalab Ltd, Norrsken House, Jasiri Talent Investor</strong> which will follow pitching using Business Model Canvas format on 10/15/2024.</p>
+    </div>
+    <div class="connection-update">
+        <p><strong>Connection 2:</strong> Entrepreneur Team B connected with Bank Y on 10/20/2024.</p>
+    </div>
+    <div class="connection-update">
+        <p><strong>Connection 3:</strong> Best business analyst and Moderator Team</strong> is organizing a first pitch event to be hosted by Norrsken House, Post graduate entrepreneurs who submitted projects will be communicated soon , 10/25/2024.</p>
+    </div>
+</section>
 
-<!-- Submitted Projects Section -->
 <section id="submitted-projects">
-    <h3>Latest Submitted Projects</h3>
-
-    <!-- First Project -->
+    <h3>Submitted Projects</h3>
     <div class="project-update">
-        <h4>Projects: Affordable Medical Gloves Production,Hematology diluent reagents production,Hemoglobin Meter production</h4>
-        <p><strong>Submitted By:</strong> Msc Biomedical Engineering Cohort 3 Entrepreneur team from UR-CEBE (https://cebe.ur.ac.rw/)  </p>
-        <p><strong>Submission Date:</strong> October 10, 2024</p>
-        <p><strong>Status:</strong> Under Review by Jasiri Talent Investor and Moderator team.</p>
-        <p><em>Last Updated: 3 days ago</em></p>
+        <h4>Project Title 1</h4>
+        <p>Description of Project 1 submitted by <p><strong>Submitted By:</strong> Msc Biomedical Engineering Cohort 3 Entrepreneur team from UR-CEBE (https://cebe.ur.ac.rw/)  </p>.</p>
     </div>
-
-    <!-- Second Project -->
     <div class="project-update">
-        <h4>Project: Self power pumps </h4>
-        <p><strong>Submitted By:</strong> Msc Renewable Energy cohort 6 Entrepreneur team from UR-CST/ACE-ESD (https://aceesd.ur.ac.rw/home) </p>
-        <p><strong>Submission Date:</strong> October 23, 2024</p>
-        <p><strong>Status:</strong> Under Review by Jasiri Talent Investor and Moderator team .</p>
-        <p><em>Last Updated: 1 hour ago</em></p>
+        <h4>Project Title 2</h4>
+        <p>Msc Renewable Energy cohort 6 Entrepreneur team from UR-CST/ACE-ESD (https://aceesd.ur.ac.rw/home).</p>
     </div>
-
-    <!-- Add more project updates here -->
+    
 </section>
 
-<!-- Recent Connections Section and pending connections -->
-<section id="recent-connections and pending connections">
-    <h3>Recent Connections and pending connections for participating in TWIPLA pitching events </h3>
-    <div class="connection-update">
-        <p><strong>Msc Biomedical Engineering-Cohort 3</strong> has submitted a strong concept Business Ideas notes which attracted attention of <strong>Investors from Pharmalab Ltd, Norrsken House, Jasiri Talent Investor</strong> which will follow pitching using Business Model Canvas format.</p>
-        <p><em>Last Updated: 10 minutes ago</em></p>
+<section id="faq">
+    <h3>Frequently Asked Questions</h3>
+    <div class="faq">
+        <h4 onclick="toggleFAQ('faq1')">What is TWIPLA?</h4>
+        <div id="faq1" class="faq-content">
+            <p>TWIPLA is a platform that connects entrepreneurs with investors and banks to facilitate the funding of innovative projects through pitching events.</p>
+        </div>
     </div>
-
-<div class="connection-update">
-        <p><strong>Best business analyst and Moderator Team</strong> is organizing a first pitch event to be hosted by Norrsken House, Post graduate entrepreneurs who submitted projects will be communicated soon</strong>.</p>
-        <p><em>Last Updated: 45 minutes ago</em></p>
+    <div class="faq">
+        <h4 onclick="toggleFAQ('faq2')">Who can participate in TWIPLA pitching events?</h4>
+        <div id="faq2" class="faq-content">
+            <p>Both postgraduate students with business ideas and investors looking for opportunities can participate. Additionally, banks and moderators are welcome to join the platform.</p>
+        </div>
     </div>
-
-    <div class="connection-update">
-        <p><strong>Bank of Kigali and Kenya Commercial Bank</strong> are the current committed financial source of loan <strong>for pending connection between postgraduate entrepreneur students team or cohort</strong> and investors.</p>
-        <p><em>Last Updated: 2 months ago</em></p>
+    <div class="faq">
+        <h4 onclick="toggleFAQ('faq3')">How do I submit a project idea?</h4>
+        <div id="faq3" class="faq-content">
+            <p>You can submit your project idea by filling out the designated form available on the respective sections for entrepreneurs.</p>
+        </div>
     </div>
-
+    <div class="faq">
+        <h4 onclick="toggleFAQ('faq4')">What are the benefits of being an investor?</h4>
+        <div id="faq4" class="faq-content">
+            <p>Investors gain access to innovative projects, the chance to support promising entrepreneurs, and the opportunity to profit from successful ventures.</p>
+        </div>
+    </div>
 </section>
-
 <section id="partners">
     <h3>Our Partners</h3>
+    <div class="partner">
+        <h4>Business Development fund, https://bdf.rw</h4>
+        <p>your business development partner.</p>
+    </div>
     <div class="partner">
         <h4>Norrsken House, https://site.norrsken.org/kigali</h4>
         <p>Bringing sustainable innovation to life, connecting entrepreneurs with resources to scale and expand.</p>
@@ -233,13 +270,18 @@
     </div>
 </section>
 
-
-
 <footer>
     <p>&copy; 2024 TWIPLA. All rights reserved. | Created by sim </p>
     <p>Contact us: <a href="mailto:youremail@example.com">twiplaevents@gmail.com</a> | Phone: +250 784803560 / +250 786854200</p>
     <p><a href="terms.html" style="color: white;">Terms & Conditions</a> | <a href="privacy.html" style="color: white;">Privacy Policy</a></p>
 </footer>
+
+<script>
+    function toggleFAQ(faqId) {
+        const faqContent = document.getElementById(faqId);
+        faqContent.style.display = faqContent.style.display === 'block' ? 'none' : 'block';
+    }
+</script>
 
 </body>
 </html>
