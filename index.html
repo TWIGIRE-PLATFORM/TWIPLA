@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to<br>TWIPLA</title>
     <style>
+
         /* Base Styles */
         body {
             font-family: Arial, sans-serif;
@@ -23,6 +24,7 @@
             padding: 10px 0;
             text-align: center;
             flex-shrink: 0;
+             
         }
         nav {
             display: flex;
@@ -56,6 +58,19 @@
             color: white;
             margin-top: auto;
         }
+        
+
+             #moderator {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 0.8em;
+    padding: 5px 10px;
+    background-color: #e0f2f1; /* Light teal for a subtle look */
+    border: 1px solid #4CAF50; /* Same color as other sections for unity */
+    border-radius: 5px;
+}
+
 
         /* New Styles for Recent Connections */
         #recent-connections {
@@ -155,11 +170,57 @@
             background-color: #45a049;
         }
     </style>
+
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debate Section</title>
+    <style>
+        #debate-section {
+            background-color: #e7f9e7; /* Light green background */
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .debate-topic {
+            margin-bottom: 10px;
+        }
+
+        .debate-topic h3 {
+            color: #333; /* Dark text color */
+        }
+
+        #debate-content {
+            padding: 10px;
+            background-color: #f2f2f2; /* Light gray background */
+            border-radius: 5px;
+        }
+       #moderator {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 0.8em;
+    padding: 5px 10px;
+    background-color: #e0f2f1; /* Light teal for a subtle look */
+    border: 1px solid #4CAF50; /* Same color as other sections for unity */
+    border-radius: 5px;
+    z-index: 10; /* Ensure it appears above other elements */
+}
+
+}
+
+
+    </style>
+
+
+
 </head>
 <body>
 
 <header>
     <h1>Welcome to <br> TWIGIRE PLATFORM <br> Investment is not the issue but the Innovation </h1>
+    <div id="moderator"> MODERATOR TEAM MEMBERS <a href="https://docs.google.com/forms/d/e/1FAIpQLSfFsyp7CmXEVv0SF9uudc45MjB0YinWZ6jtiGif48qKqbjH9Q/viewform?usp=sf_link" target="_blank" style="color: #4CAF50;">Click Here</a></div>
+
 </header>
 
 <section id="welcome-note" style="background-color: #e7f9e7; border-radius: 8px; padding: 20px; position: relative; overflow: hidden;">
@@ -186,6 +247,9 @@
         </p>
         <p style="font-size: 1.2em; line-height: 1.5; text-align: justify; padding: 10px; background-color: #ffffff; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); margin-top: 10px;">
             Explore the possibilities, connect with like-minded individuals, and take the first step toward making your entrepreneurial dreams a reality by participating in TWIPLA pitching events...
+        </p>
+        <p style="font-size: 1.2em; line-height: 1.5; text-align: justify; padding: 10px; background-color: #ffffff; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); margin-top: 10px;">
+             Positioning it under Education with an impact in financial support aligns well with its goal to foster knowledge and entrepreneurial growth. Including both aspects highlights its unique role in connecting academia to industry and finance, bridging educational aspirations with practical, scalable solutions
         </p>
     </div>
 </section>
@@ -229,7 +293,7 @@ button:hover {
 <nav>
     <a href="#entrepreneur"> Entrepreneur cohort invitation here </a>
     <a href="#investor">Investor ? most welcome here.</a>
-    <a href="#moderator"> want to be part of moderator team? this is the right place.</a>
+    <a href="#debate-section"> want to participate in Debate or provide critical topic idea for the debate ? this is the right place.</a>
     <a href="#bank"> commercial Banks wing here </a>
 </nav>
 
@@ -269,16 +333,24 @@ button:hover {
     </div>
 </section>
 
-<section id="moderator" style="background-color: #e7f9e7; border-radius: 8px; padding: 20px; margin-bottom: 20px; position: relative; overflow: hidden;">
-    <h3 style="color: #2E7D32; font-family: 'Arial', sans-serif; text-align: center; font-size: 1.8em; cursor: pointer;" onclick="toggleSection('moderator-content')">Moderator Entry</h3>
-    <div id="moderator-content" style="display:none; animation: fadeIn 1s ease;">
-        <p style="font-size: 1.2em; line-height: 1.5; text-align: justify; padding: 10px; background-color: #ffffff; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);">
-            Moderators play a crucial role in managing pitch events and ensuring smooth interactions between entrepreneurs, investors, and banks. Join our team of moderators to facilitate these pivotal moments and contribute to the innovation ecosystem:
-        </p>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfFsyp7CmXEVv0SF9uudc45MjB0YinWZ6jtiGif48qKqbjH9Q/viewform?usp=sf_link" target="_blank"><button>Become a Moderator</button></a>
-    </div>
 
-</section>
+<section id="debate-section">
+        <h2>Debate Forum / Entrepreneuship Summits </h2>
+        <div class="debate-topic">
+            <h3>Debate Topic: the government should create a fund for start up businesses without collateral term for students </h3>
+            <button onclick="toggleDebateContent()">View Arguments</button>
+            <div id="debate-content" style="display:none;">
+                <p><strong>For the Government Fund without Collateral</strong> <br> Encourages innovation and economic growth <br> Reduces youth unemployment <br> Promotes equity and inclusivity <br> Stimulates skills development and practical learning <br> Attracts and retains talent</p>
+                <p><strong>Against the Government Fund without Collateral</strong> <br> Risk of high default rates <br> Encourages unviable businesses <br> Burden on public finances <br>Moral hazard <br> Potential for corruption and mismanagement
+
+
+</p>
+                
+            </div>
+
+        </div>
+         <div id="debate-content"> Your Idea is Valued <a href="https://docs.google.com/forms/d/e/1FAIpQLSdKjO-VfpR1Y3bZt5oRgHxe9RMtAl0o8ZHMVWectQuN2VqP-Q/viewform?usp=sf_link" target="_blank" style="color: #4CAF50;">Click Here</a></div>
+    </section>
 
 <section id="recent-connections">
     <h3 onclick="toggleSection('recent-connections-content')">Recent Connections</h3>
@@ -404,6 +476,16 @@ button:hover {
     }
 </script>
 
+   <script>
+        function toggleDebateContent() {
+            const content = document.getElementById('debate-content');
+            if (content.style.display === 'none') {
+                content.style.display = 'block'; // Show the content
+            } else {
+                content.style.display = 'none'; // Hide the content
+            }
+        }
+    </script>
 
 </body>
 </html>
